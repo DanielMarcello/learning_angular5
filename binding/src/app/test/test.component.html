@@ -1,5 +1,9 @@
 <h2>
   Welcome {{ name }}
 </h2>
-<input [id]="myId" type="text" value="Daniel">
-<input bind-disabled="isDisabled" id="{{ myId }}" type="text" value="Daniel">
+<h2 class="text-success">Daniel</h2>
+<h2 [class]="successClass">Daniel</h2>
+<h2 [class]="successClass" class="text-success">Daniel</h2>
+<h2 [class.text-danger]="hasError">Daniel</h2>
+
+<h2 [ngClass]="messageClasses">Daniel</h2>
