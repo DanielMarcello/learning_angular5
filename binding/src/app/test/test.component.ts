@@ -8,14 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "Daniel";
-  public siteUrl = window.location.href;
+  public myId = "testId";
+  public isDisabled = false;
   constructor() { }
 
   ngOnInit() {
-  }
-
-  greetUser(){
-  	return "Hello " + this.name;
   }
 
 }
