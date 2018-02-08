@@ -1,0 +1,20 @@
+<!-- conditional -->
+<!-- <h2 *ngIf="displayName; else elseBlock">
+	Daniel
+</h2>
+
+<ng-template #elseBlock>
+	<h2>
+		Name is hidden
+	</h2>
+</ng-template> -->
+
+<div *ngIf="displayName; then thenBlock; else elseBlock">
+	
+</div>
+<ng-template #thenBlock>
+	<h2>Daniel</h2>
+</ng-template>
+<ng-template #elseBlock>
+	<h2>Hidden</h2>
+</ng-template>
