@@ -12,10 +12,10 @@ export class TestComponent implements OnInit {
   public hasError = true;
   public isSpecial = true;
   public messageClasses = {
-  	"text-success": !this.hasError;
-  	"text-danger": this.hasError;
-  	"text-special": this.isSpecial;
-  }
+  	"text-success": !this.hasError,
+  	"text-danger": this.hasError,
+  	"text-special": this.isSpecial,
+  };
   constructor() { }
 
   ngOnInit() {
