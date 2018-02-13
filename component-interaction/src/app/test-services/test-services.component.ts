@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-test-services',
@@ -12,7 +13,7 @@ export class TestServicesComponent implements OnInit {
   constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit() {
-  	this.employees = this._employeeService.getEmployees;
+  	this.employees = this._employeeService.getEmployees();
   }
 
 }

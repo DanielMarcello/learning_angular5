@@ -7,7 +7,7 @@ import { TestComponent } from './test/test.component';
 import { TestPipesComponent } from './test-pipes/test-pipes.component';
 import { TestServicesComponent } from './test-services/test-services.component';
 
-import { EmployeeService } from '.employee.service'
+import { EmployeeService } from './employee.service';
 
 
 @NgModule({
