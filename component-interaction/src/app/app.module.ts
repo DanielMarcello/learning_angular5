@@ -8,6 +8,7 @@ import { TestPipesComponent } from './test-pipes/test-pipes.component';
 import { TestServicesComponent } from './test-services/test-services.component';
 
 import { EmployeeService } from './employee.service';
+import { HttpClientModule } from '@angular/common/http'; //HTTP
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { EmployeeService } from './employee.service';
     TestServicesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
