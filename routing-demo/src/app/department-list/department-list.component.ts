@@ -21,7 +21,8 @@ export class DepartmentListComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
-      let id = parseInt(params.get('id'));
+      // tslint:disable-next-line:radix
+      const id = parseInt(params.get('id'));
       this.selectedId = id;
     });
   }
